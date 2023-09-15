@@ -6,43 +6,36 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
-  var length = 8;
-  var hasSpecialCharacters = "!@#$%^&*()_+~\`|}{[]:;?><,./-=";
+  var length = math.floor(math.random() * 129) + 8;
+  var hasSpecialCharacters = "!","%","^","&","*","(",")","_","+","~","\","|","}","[","]",",";","?","">","<","/","
   var hasNumericCharacters = 123456789;
-  var hasLowerCasedLetters = "abcdefghijklmnopqrstuvwxyz"
+  var hasLowerCasedLetters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
   var hasUpperCasedLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-  var min = 8;
-  var max= 128;
-
+=
   passwordText.value = password;
 
   var passwordOptions = {
-    length: length,
-    hasSpecialCharacters: hasSpecialCharacters,
-    hasLowerCasedLetters: hasLowerCasedLetters,
-    hasUpperCasedLetters: hasUpperCasedLetters,
-    hasNumericCharacters: hasNumericCharacters,
+
+
   };
 
 
-}
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
 function writePassword() {
-  var length 
+
   window.prompt("How many characters would you like? (8-128 Characters)");
   if (confirm);
-  console.log(Math.floor());
-} else {
-  return ;
+  console.log(length);
   
 
   var hasSpecialCharacters
   window.confirm("Would you like Special Characters?");
   if (hasSpecialCharacters= true);
-  console.log(Math.random(Symbol));
+  console.log(hasSpecialCharacters);
   if (hasSpecialCharacters= false);
   return; 
 
@@ -67,5 +60,4 @@ function writePassword() {
   if (hasUpperCasedLetters = false);
   return;
 
-window.prompt("Here is your password!")
 }
